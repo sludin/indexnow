@@ -10,7 +10,7 @@ or
 
 ### API Key
 
-Get the key from <a href="https://www.bing.com/indexnow">IndexNow</a> and put it in a file at the root
+Get the key from [IndexNow](https://www.bing.com/indexnow) and put it in a file at the root
 of your site with the name being the key with a .txt extension.  For example:
 
     Key: c9e44b0436e74ce1952da7a7922dc8f7 
@@ -23,21 +23,23 @@ of your site with the name being the key with a .txt extension.  For example:
     node src/index.js HOSTNAME KEY URL_FILE
    
 - HOSTNAME: The hostname of your site
-- KEY: The IndexNow API key.  Fetch from <a href="https://www.bing.com/indexnow">IndexNow</a>
+- KEY: The IndexNow API key.  Fetch from [IndexNow](https://www.bing.com/indexnow)
 - URL_FILE: A newline delimited file of the URLs you want to submit
 
 ### Example
 
-URL File (urls.txt):
+URL File (`urls.txt`):
 
-    https://www.ludin.org
-    https://www.ludin.org/gallery.html
-    https://www.ludin.org/about.html
-    https://www.ludin.org/contact.html
+```
+https://www.ludin.org
+https://www.ludin.org/gallery.html
+https://www.ludin.org/about.html
+https://www.ludin.org/contact.html
+```
 
-Hostname: www.ludin.org
+Hostname: `www.ludin.org`
 
-Key: <key from <a href="https://www.bing.com/indexnow">IndexNow</a> >.  For example: c9e44b0436e74ce1952da7a7922dc8f7 
+Key: key from [IndexNow](https://www.bing.com/indexnow).  For example: c9e44b0436e74ce1952da7a7922dc8f7 
 
     node src/index.js www.ludin.org c9e44b0436e74ce1952da7a7922dc8f7 urls.txt
     
